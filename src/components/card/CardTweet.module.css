@@ -91,6 +91,12 @@
   text-transform: uppercase;
   line-height: 21.94px;
   color: #373737;
+  width: 196px;
+}
+.buttonFollowing {
+  background-color: #5cd3a8;
+  padding-left: 39px;
+  padding-right: 39px;
 }
 .buttonBox {
   display: flex;
