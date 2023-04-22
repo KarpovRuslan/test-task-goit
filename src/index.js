@@ -7,7 +7,7 @@ import App from "./App";
 const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/test-task-goit">
+    <BrowserRouter basename="/test-task-goit/">
       <App />
     </BrowserRouter>
   </React.StrictMode>
