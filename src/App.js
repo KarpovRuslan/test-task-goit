@@ -1,13 +1,19 @@
 import "./App.css";
-import { CardList } from "./components/cardList/CardList";
-import { Header } from "./components/header/Header";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { Suspense } from "react";
+import { Loader } from "./components/Loader/Loader";
+import Home from "./pages/Home/Home";
+import { Tweets } from "./pages/Tweets/Tweets";
 
 function App() {
   return (
-    <div className="App-header">
-      <Header />
-      <CardList />
-    </div>
+    <Suspense fallback={<Loader />}>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="tweets" element={<Tweets />} />
+        <Route path="*" element={<Navigate to="/" replace={true} />} />
+      </Routes>
+    </Suspense>
   );
 }
 

@@ -1,0 +1,20 @@
+.header {
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logoText {
+  margin-left: 8px;
+  font-size: 27px;
+  font-weight: 600;
+}
