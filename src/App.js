@@ -8,7 +8,7 @@ function App() {
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="tweets" element={<Tweets />} />
         <Route path="*" element={<Navigate to="/" replace={true} />} />
       </Routes>
