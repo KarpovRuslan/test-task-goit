@@ -1,10 +1,13 @@
 # Тестове завдання
 
-Мета: створити картки твітів та додати інтерактивності при клікові на кнопку.
-https://textbook.edu.goit.global/lms-career-homework/uk/img/image-1.jpg
-Загальний вигляд картки у двох станах - Follow та Following
+Проект сворено за допомогою [Create-React-App] (https://create-react-app.dev/ Create-React-App)
 
-# Технічне завдання​
+Мета: створити картки твітів та додати інтерактивності при клікові на кнопку.
+
+! [TestImg] (https://textbook.edu.goit.global/lms-career-homework/uk/img/image-1.jpg)
+_Загальний вигляд картки у двох станах - Follow та Following_
+
+## Технічне завдання​
 
 Відповідно до макету потрібно реалізувати картки юзера.
 
