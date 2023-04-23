@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import { Loader } from "./components/Loader/Loader";
 
@@ -13,15 +13,13 @@ const Tweets = lazy(() =>
 
 function App() {
   return (
-    <BrowserRouter basename="/test-task-goit">
-      <Suspense fallback={<Loader />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="tweets" element={<Tweets />} />
-          <Route path="*" element={<Navigate to="/" replace={true} />} />
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
+    <Suspense fallback={<Loader />}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="tweets" element={<Tweets />} />
+        <Route path="*" element={<Navigate to="/" replace={true} />} />
+      </Routes>
+    </Suspense>
   );
 }
 
