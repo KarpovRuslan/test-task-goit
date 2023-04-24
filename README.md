@@ -4,6 +4,8 @@
 
 Зроблена маршрутизація за допомогою **React Router**
 
+Зроблена **фільтрація** Tweets
+
 Мета: створити картки твітів та додати інтерактивності при клікові на кнопку.
 
 ![TestImg](https://textbook.edu.goit.global/lms-career-homework/uk/img/image-1.jpg)
