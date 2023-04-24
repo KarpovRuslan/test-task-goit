@@ -9,12 +9,12 @@ export const CardTweet = ({ user }) => {
     JSON.parse(localStorage.getItem(`${id}-isFollowing`)) ?? false
   );
   const [followersNum, setFollowersNum] = useState(
-    JSON.parse(localStorage.getItem(`${id}-followers`)) ?? followers
+    JSON.parse(localStorage.getItem(`${id}-followersNum`)) ?? followers
   );
 
   useEffect(() => {
     localStorage.setItem(`${id}-isFollowing`, JSON.stringify(isFollowing));
-    localStorage.setItem(`${id}-followers`, JSON.stringify(followersNum));
+    localStorage.setItem(`${id}-followersNum`, JSON.stringify(followersNum));
   }, [id, isFollowing, followersNum]);
 
   const onFollowClick = () => {
@@ -25,6 +25,7 @@ export const CardTweet = ({ user }) => {
     setIsFollowing(false);
     setFollowersNum(followersNum - 1);
   };
+
   return (
     <div className={css.card}>
       <img alt="logo" className={css.logo} src={logo}></img>
